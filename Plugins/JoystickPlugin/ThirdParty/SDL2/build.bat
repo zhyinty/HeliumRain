@@ -18,12 +18,12 @@ mkdir %SDL_DIR%\Lib
 
 mkdir %BUILD_DIR%
 
-echo "copy patches..."
-copy SDL_Patches\*.* %SDL_DIR%\
+@REM echo "copy patches..."
+@REM copy SDL_Patches\*.* %SDL_DIR%\
 
 cd %BUILD_DIR%
 
-cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DSDL_STATIC=ON -DSDL_SHARED=ON -DLIB_C=ON-DFORCE_STATIC_VCRT=ON -DEPIC_EXTENSIONS=OFF --build-64bit --config Release ../%SDL_DIR%
+cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DSDL_STATIC=ON -DSDL_SHARED=ON -DLIB_C=ON-DFORCE_STATIC_VCRT=ON -DEPIC_EXTENSIONS=OFF Release ../%SDL_DIR%
 
 msbuild sdl2.sln /t:ALL_BUILD /p:Configuration="Release"
 rem cls

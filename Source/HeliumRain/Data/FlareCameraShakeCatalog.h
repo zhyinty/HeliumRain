@@ -18,22 +18,22 @@ public:
 
 	/** Fighter getting hit */
 	UPROPERTY(EditAnywhere, Category = Content)
-	TSubclassOf<UCameraShake> HitNormal;
+	TSubclassOf<UMatineeCameraShake> HitNormal;
 
 	/** Capital getting hit  */
 	UPROPERTY(EditAnywhere, Category = Content)
-	TSubclassOf<UCameraShake> HitHeavy;
+	TSubclassOf<UMatineeCameraShake> HitHeavy;
 	
 	/** Fighter impact */
 	UPROPERTY(EditAnywhere, Category = Content)
-	TSubclassOf<UCameraShake> ImpactS;
+	TSubclassOf<UMatineeCameraShake> ImpactS;
 	
 	/** Capital impact */
 	UPROPERTY(EditAnywhere, Category = Content)
-	TSubclassOf<UCameraShake> ImpactL;
+	TSubclassOf<UMatineeCameraShake> ImpactL;
 	
 	/** Exhaust */
 	UPROPERTY(EditAnywhere, Category = Content)
-	TSubclassOf<UCameraShake> Exhaust;
+	TSubclassOf<UMatineeCameraShake> Exhaust;
 	
 };

@@ -393,7 +393,7 @@ protected:
 		return CurrentColorHSV;
 	}
 
-	TSharedRef<SWidget> MakeColorSlider() const
+	TSharedRef<SWidget> MakeColorSlider()
 	{
 		return SNew(SOverlay)
 

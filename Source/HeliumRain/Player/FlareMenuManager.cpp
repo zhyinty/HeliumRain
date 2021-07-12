@@ -38,7 +38,7 @@
 #include "HeliumRain/Player/FlareMenuPawn.h"
 #include "HeliumRain/Player/FlarePlayerController.h"
 
-#include "../HeliumRainLoadingScreen/FlareLoadingScreen.h"
+#include "FlareLoadingScreen.h"
 
 #include <GameFramework/InputSettings.h>
 #include <Engine.h>

@@ -1,6 +1,6 @@
 @echo off
 
-if not exist SDL hg clone http://hg.libsdl.org/SDL
+if not exist SDL git clone https://github.com/libsdl-org/SDL.git
 
 cd SDL
 hg update

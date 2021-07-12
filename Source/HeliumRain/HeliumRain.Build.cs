@@ -33,6 +33,13 @@ public class HeliumRain : ModuleRules
                 "AppFramework"
             }
         );
+
+        PublicIncludePaths.AddRange(
+            new string[]
+            {
+                "HeliumRainLoadingScreen"
+            }
+        );
         
         PrivateDependencyModuleNames.Add("OnlineSubsystem");
         DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
